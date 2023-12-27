@@ -1,0 +1,22 @@
+mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .multicolor-toolbar {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #52d3aa;
+    background-image: -webkit-gradient(
+      linear,
+      0% 0%,
+      100% 100%,
+      color-stop(0, #3f95ea),
+      color-stop(1, #52d3aa)
+    );
+    background-image: -webkit-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+    background-image: repeating-linear-gradient(to bottom right, #3f95ea 0%, #52d3aa 100%);
+    background-image: -ms-repeating-linear-gradient(top left, #3f95ea 0%, #52d3aa 100%);
+    /* Otros estilos de la barra de herramientas */
+  }
+  
+  

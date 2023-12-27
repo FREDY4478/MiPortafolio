@@ -76,8 +76,8 @@ export default class LogInComponent {
 
     if (isInvalid) {
       return control.hasError('required')
-        ? 'This field is required'
-        : 'Enter a valid email';
+        ? 'Campo obligatorio'
+        : 'Introduce un Correo Valido';
     }
 
     return false;

@@ -59,6 +59,7 @@
     margin-top: 50px; /* Espacio superior al enlace */
   }
   
+  /* centrando contenido de la tabla */
   .centered_contener {
     display: flex;
     align-items: center;
@@ -68,7 +69,7 @@
   }
   
   .dynamic-text {
-    font-size: 7em; /* Cambia el valor según el tamaño deseado */
+    font-size: 8em; /* Cambia el valor según el tamaño deseado */
   }
 
   .example-spacer {
@@ -82,11 +83,8 @@
     background-image: -ms-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
   }
 
-  /* Estilos CSS para ajustar la posición vertical */
-.cdk-global-overlay-wrapper .mat-snack-bar-container {
-  top: 50%;
-  transform: translateY(-50%);
-}
+ 
+
 
 .icon-container {
   display: flex;
@@ -97,17 +95,14 @@
 }
 
 mat-icon {
-  /* Estilos adicionales para los íconos si es necesario */
   font-size: 24px; /* Tamaño del ícono */
-  /* Otros estilos */
+ 
 }
 .mat-tab-group {
   margin-bottom: 48px;
-  background-color: #52d3aa;
-    background-image: -webkit-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
-    background-image: repeating-linear-gradient( to bottom right, #3f95ea 0%, #52d3aa 100% );
-    background-image: -ms-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+  
 }
+
   
 .centered-content {
   display: flex;
@@ -117,8 +112,8 @@ mat-icon {
 }
 
 .icon {
-  width: 60px; /* Establece el ancho deseado */
-  height: auto; /* Mantiene la proporción del icono */
+  width: 60px; 
+  height: auto; /* icono */
 }
 
 /* Estilos para click*/

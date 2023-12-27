@@ -21,6 +21,6 @@ export const appConfig: ApplicationConfig = {
             color: 'accent',
         },
     },
-    provideAnimations()
+    
 ],
 };

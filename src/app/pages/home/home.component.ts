@@ -8,26 +8,11 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule],
   selector: 'app-home',
-  template: `
-    <mat-toolbar color="accent"
-    >
-      <span>Home</span>
-
-      <button mat-flat-button (click)="logOut()">Log out</button>
-    </mat-toolbar>
-  `,
-  styles: [
-    `
-      mat-toolbar {
-        display: flex;
-        justify-content: space-between;
-      }
-    `,
-  ],
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.scss'], 
 })
 export default class HomeComponent {
   private _router = inject(Router);
-
   private authservice = inject(AuthService);
 
   async logOut(): Promise<void> {
