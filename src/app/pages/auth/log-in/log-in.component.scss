@@ -1,0 +1,152 @@
+/* Estilos para el encabezado */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Ajusta el padding según lo necesites */
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #52d3aa;
+    background-image: -webkit-gradient( linear, 0% 0%, 100% 100%, color-stop(0, #3f95ea), color-stop(1, #52d3aa) );
+    background-image: -webkit-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+    background-image: repeating-linear-gradient( to bottom right, #3f95ea 0%, #52d3aa 100% );
+    background-image: -ms-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+  }
+  
+  .header__left {
+    font-weight: bold; /* Opciones de estilos para el texto a la izquierda */
+  }
+  
+  .header__right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header__menu {
+    list-style: none;
+    padding: 2;
+    margin: 0;
+    margin-right: 20px; /* Ajusta el margen derecho según sea necesario */
+  }
+  
+  
+  .header__menu li {
+    margin-right: 20px; /* Espacio entre elementos del menú */
+    display: inline-block;; /* Alinea los elementos horizontalmente */
+    cursor: pointer; /* Agrega cursor para señalar que son enlaces */
+  }
+  
+  /* seccion inicio */
+  .centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120vh;
+    text-decoration: underline; /* Agrega subrayado al enlace */
+    margin-top: 10px; /* Espacio superior al enlace */
+  }
+  
+  .start-aligned {
+    display: flex;
+    align-items: flex-start; /* Alinea el contenido al inicio */
+    justify-content: center;
+    height: 100vh;
+    text-decoration: underline; /* Agrega subrayado al enlace */
+    margin-top: 50px; /* Espacio superior al enlace */
+  }
+  
+  .centered_contener {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 110vh;
+    margin-top: 50px;
+  }
+  
+  .dynamic-text {
+    font-size: 7em; /* Cambia el valor según el tamaño deseado */
+  }
+
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+
+  .form__container:hover {
+    background-color: #52d3aa;
+    background-image: -webkit-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+    background-image: repeating-linear-gradient( to bottom right, #3f95ea 0%, #52d3aa 100% );
+    background-image: -ms-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+  }
+
+  /* Estilos CSS para ajustar la posición vertical */
+.cdk-global-overlay-wrapper .mat-snack-bar-container {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* Ajusta el espacio entre los íconos */
+  align-items: center; /* Centra verticalmente los íconos */
+  width: 100%; /* Ajusta el ancho del contenedor */
+}
+
+mat-icon {
+  /* Estilos adicionales para los íconos si es necesario */
+  font-size: 24px; /* Tamaño del ícono */
+  /* Otros estilos */
+}
+.mat-tab-group {
+  margin-bottom: 48px;
+  background-color: #52d3aa;
+    background-image: -webkit-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+    background-image: repeating-linear-gradient( to bottom right, #3f95ea 0%, #52d3aa 100% );
+    background-image: -ms-repeating-linear-gradient( top left, #3f95ea 0%, #52d3aa 100% );
+}
+  
+.centered-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ajusta la altura del contenido */
+}
+
+.icon {
+  width: 60px; /* Establece el ancho deseado */
+  height: auto; /* Mantiene la proporción del icono */
+}
+
+/* Estilos para click*/
+.link-with-circle {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.link-with-circle::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50px; /* Diámetro del círculo */
+  height: 50px; /* Diámetro del círculo */
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5); /* Color del círculo con transparencia */
+  opacity: 0; /* Inicialmente oculto */
+  transition: opacity 0.3s ease; /* Transición suave al aparecer */
+}
+
+.link-with-circle:hover::before {
+  opacity: 10; /* Mostrar el círculo al pasar el ratón por encima */
+}
+
+
+  
+ 
+  

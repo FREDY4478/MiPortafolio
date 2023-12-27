@@ -1,0 +1,11 @@
+{
+  "hosting": [
+    {
+      "target": "portafolio",
+      "source": ".",
+      "frameworksBackend": {
+        "region": "us-central1"
+      }
+    }
+  ]
+}

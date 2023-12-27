@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "libreria-bc4ad": {
+      "hosting": {
+        "portafolio": [
+          "libreria-bc4ad"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "libreria-bc4ad"
+  }
+}

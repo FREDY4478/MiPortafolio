@@ -1,0 +1,162 @@
+<header class="header">
+  <div class="header__left">
+    Bienvenido
+  </div>
+  <div class="header__right">
+    <ul class="header__menu">
+      <li><a (click)="scrollTo('inicio')">Inicio</a></li>
+      <li><a (click)="scrollTo('proyectos')">Proyectos</a></li>
+      <li><a (click)="scrollTo('acerca')">Acerca de</a></li>
+      <li><a (click)="scrollTo('contacto')">Contacto</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="inicio" class="start-aligned">
+  <div class="start-aligned">
+    <a href="https://github.com/FREDY4478" class="dynamic-text" style="color: white; " target="_blank" >{{ dynamicText }}</a>
+  </div>
+  <div style="display: block; position: relative; text-align: center;" (click)="showLoginForm = !showLoginForm;" >
+    <h2>Developer</h2>
+  </div>
+  <!-- aqui empieza el formulario -->
+  <div class="form" *ngIf="showLoginForm" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 1; border-radius: 10px;">
+    <div class="form__container" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;  margin-right: 20px;">
+      <h1 style="display: flex; justify-content: center; align-items: center;">
+        Usuario
+      </h1>      
+      <form [formGroup]="form" (ngSubmit)="logIn()">
+        <div>
+          <mat-form-field>
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" />
+            <mat-error *ngIf="isEmailValid as messsage">{{ messsage }}</mat-error>
+          </mat-form-field>
+        </div>
+  
+        <div>
+          <mat-form-field>
+            <mat-label>Ingresar Contraseña</mat-label>
+            <input
+              matInput
+              [type]="hide ? 'password' : 'text'"
+              formControlName="password"
+            />
+            <button
+              mat-icon-button
+              matSuffix
+              (click)="hide = !hide"
+              [attr.aria-label]="'Hide password'"
+              [attr.aria-pressed]="hide"
+            >
+              <mat-icon>{{ hide ? "visibility_off" : "visibility" }}</mat-icon>
+            </button>
+            <mat-error>campo requerido</mat-error>
+          </mat-form-field>
+        </div>
+  
+        <div>
+          <button mat-flat-button color="accent" type="submit">Ingresar</button>
+        </div>
+      </form>
+      <hr />
+      <!-- <span class="small-text providers">Have Google or GitHub?</span>
+      <app-button-providers [isLogin]="true" />
+      <span class="small-text log-in-redirect"
+        >Don’t have an account yet?
+        <a routerLink="/auth/sign-up">Sign up</a></span
+      > -->
+    </div>
+  </div>
+
+  <div class="form" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+    <div class="form__container" style="border: 1px solid #ccc; padding: 20px; transition: background-color  0.3s ; border-radius: 10px; ">
+      <h1 style="display: flex; justify-content: left; align-items: center;  color: rgb(249, 245, 245);">
+        curirriculum <mat-icon>assignment</mat-icon>
+      </h1> 
+        
+    </div>
+  </div>
+  
+</section>
+
+
+<section id="proyectos" class="centered_contener">
+  <!-- Contenido de la sección de Proyectos -->
+  proyectos
+</section>
+
+<section id="acerca" class="centered_contener">
+  <div class="form" style="position: relative; top: 50%; left: 15%; transform: translate(-50%, -50%); z-index: 1;">
+    <div class="form__container" style="border: 1px solid #ccc; padding: 20px; transition: background-color 0.3s; border-radius: 8px; text-align: center;">
+      <!-- Agregar la imagen en círculo -->
+      <div style="position: relative; margin-bottom: 30px; margin-top: -100px;">
+        <img src="./assets/icon/foto.jpg" alt="" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #fff;">
+      </div>
+      <h1 style="text-align: justify; display: inline-block; font-style: italic; ">
+        Fredy Serech
+      </h1>
+      <h4 style="text-align: justify; display: inline-block;">
+        "Pensum Cerrado Ingenieria en Sistemas de Información y Ciencias de la Computación"
+      </h4>
+  
+      <p style="text-align: justify; display: inline-block;">
+        "Habilidades para colaborar efectivamente en entornos de trabajo colaborativo, 
+        destacándome por mi responsabilidad y capacidad para asimilar rápidamente nuevos conocimientos. 
+        Mi enfoque se centra en un genuino interés por innovar en este campo de la tecnología."
+      </p>
+
+    </div>
+  </div>
+</section>
+
+
+
+<section id="contacto" class="centered_contener">
+
+  <div class="social">
+  <mat-tab-group>
+    <mat-tab label="WhatsApp">
+      <div class="centered-content">
+        <a href="https://wa.me/message/ZTPOD5L4IP6OJ1" target="_blank" class="link-with-circle">
+          <img src="assets/icon/whatsapp.png" alt="WhatsApp" class="icon">
+        </a>
+        
+      </div>
+    </mat-tab>
+    <mat-tab label="LinkedIn">
+      <div class="centered-content">
+        <a href="www.linkedin.com/in/fredy-serech-08a11a246" target="_blank" class="link-with-circle">
+          <img src="assets/icon/linkedin.png" alt="youtube" class="icon">
+        </a>
+      </div>
+    </mat-tab>
+    <mat-tab label="Facebook">
+      <div class="centered-content">
+        <a href="https://www.facebook.com/fredy.serech?mibextid=ZbWKwL" target="_blank" class="link-with-circle">
+          <img src="assets/icon/facebook.png" alt="facebook" class="icon">
+        </a>
+      </div>
+    </mat-tab>
+    <mat-tab label="GitHub">
+      <div class="centered-content">
+        <a href="https://github.com/FREDY4478" target="_blank" class="link-with-circle">
+          <img src="assets/icon/github.png" alt="GitHub" class="icon">
+        </a>
+      </div>
+    </mat-tab>
+    <mat-tab label="Gmail">
+      <div class="centered-content">
+        <a href="mailto:serech63@gmail.com" target="_blank" class="link-with-circle">
+          <img src="assets/icon/gmail.png" alt="Gmail" class="icon">
+        </a>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+	</div>
+  
+</section>
+
+
+
+
