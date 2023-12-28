@@ -49,6 +49,7 @@ export default class LogInComponent {
   interval: any;
   showLoginForm = false;
   hide = true;
+ 
 
   formBuilder = inject(FormBuilder);
  
@@ -57,6 +58,7 @@ export default class LogInComponent {
   private router = inject(Router);
 
   private _snackBar = inject(MatSnackBar);
+  
  
   form: FormGroup<LogInForm> = this.formBuilder.group({
     email: this.formBuilder.control('', {
@@ -142,4 +144,6 @@ export default class LogInComponent {
       element.scrollIntoView({ behavior: 'smooth' });
     }
   }
+
+  
 }

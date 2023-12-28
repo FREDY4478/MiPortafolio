@@ -1,5 +1,22 @@
-<mat-toolbar class="multicolor-toolbar">
-    <span>Home</span>
-    <span>FREDY SERECH</span>
-    <button mat-flat-button (click)="logOut()" color="warn">Log out</button>
+<mat-toolbar class="multicolor-toolbar" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
+  <span>Home</span>
+  <button mat-flat-button (click)="logOut()" color="warn" aria-label="Button that displays a tooltip when focused or hovered over">Log out</button>
 </mat-toolbar>
+
+<div class="form-container">
+  <mat-form-field appearance="fill">
+    <mat-label>Fill form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+</div>
+
+<div class="form-container">
+  <mat-form-field appearance="outline">
+    <mat-label>Outline form field</mat-label>
+    <input matInput placeholder="Placeholder">
+    <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+    <mat-hint>Hint</mat-hint>
+  </mat-form-field>
+</div>
