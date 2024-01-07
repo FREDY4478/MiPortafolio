@@ -7,6 +7,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 
+
 @Component({
   standalone: true,
   imports: [MatToolbarModule, MatButtonModule,MatFormFieldModule, MatInputModule, MatIconModule],
@@ -18,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
 export default class HomeComponent {
   private _router = inject(Router);
   private authservice = inject(AuthService);
+ 
 
   async logOut(): Promise<void> {
     try {
@@ -27,4 +29,5 @@ export default class HomeComponent {
       console.log(error);
     }
   }
+
 }

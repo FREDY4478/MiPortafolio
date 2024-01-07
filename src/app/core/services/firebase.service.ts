@@ -6,6 +6,5 @@ import { Firestore } from '@angular/fire/firestore'; // Importar Firestore desde
 })
 export class FirebaseService {
   constructor(private firestore: Firestore) {}
-
  
 }
