@@ -16,13 +16,13 @@
   <div class="start-aligned" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
     <a href="https://github.com/FREDY4478" class="dynamic-text" style="color: white; " target="_blank" >{{ dynamicText }}</a>
   </div>
-  <div style="display: block; position: relative; text-align: center;" (click)="showLoginForm = !showLoginForm;" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
+  <div style="color: white; position: relative; text-align: center;" (click)="showLoginForm = !showLoginForm;" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
     <h2>Developer</h2>
   </div>
   <!-- aqui empieza el formulario -->
   <div class="form" *ngIf="showLoginForm" style="position: absolute; top: 50%; right: 0; transform: translateY(-50%); z-index: 1; border-radius: 10px;">
     <div class="form__container" style="border: 1px solid #ccc; padding: 20px; border-radius: 10px;  margin-right: 20px;">
-      <h1 style="display: flex; justify-content: center; align-items: center;">
+      <h1 style=" color: white; display: flex; justify-content: center; align-items: center;">
         Usuario
       </h1> 
         <form [formGroup]="form" (ngSubmit)="logIn()">
@@ -69,38 +69,38 @@
     </div>
   </div>
 
-  <!-- <div class="form" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
+  <div class="form" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); z-index: 1;">
     <div class="form__container" style="border: 1px solid #ccc; padding: 20px; transition: background-color  0.3s ; border-radius: 10px; ">
       <h1 style="display: flex; justify-content: left; align-items: center;  color: rgb(249, 245, 245);">
         curirriculum <mat-icon>assignment</mat-icon>
       </h1> 
-        
     </div>
-  </div> -->
+  </div>
   
 </section>
 
 
-<section id="proyectos" class="centered_contener" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
+<section style="color: white" id="proyectos" class="centered_contener" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
   <!-- Contenido de la sección de Proyectos -->
   proyectos
+  
 </section>
 
 <section id="acerca" class="centered_contener" size-xs="12" size-sm="10" size-md="8" size-lg="" size-xl="7">
   <div class="form" style="position: relative; top: 50%; left: 15%; transform: translate(-50%, -50%); z-index: 1;">
-    <div class="form__container" style="border: 1px solid #ccc; padding: 20px; transition: background-color 0.3s; border-radius: 8px; text-align: center;">
+    <div class="form__container" style="border: 2px solid #ccc; padding: 20px; transition: background-color 0.3s; border-radius: 8px; text-align: center;">
       <!-- Agregar la imagen en círculo -->
       <div style="position: relative; margin-bottom: 30px; margin-top: -100px;">
         <img src="./assets/icon/foto.jpg" alt="" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid #fff;">
       </div>
-      <h1 style="text-align: justify; display: inline-block; font-style: italic; ">
+      <h1 style=" color: white; text-align: justify; display: inline-block; font-style: italic; ">
         Fredy Serech
       </h1>
-      <h4 style="text-align: justify; display: inline-block;">
+      <h4 style=" color: white; text-align: justify; display: inline-block;">
         "Pensum Cerrado Ingenieria en Sistemas de Información y Ciencias de la Computación"
       </h4>
   
-      <p style="text-align: justify; display: inline-block;">
+      <p style="color: white; text-align: justify; display: inline-block;">
         "Habilidades para colaborar efectivamente en entornos de trabajo colaborativo, 
         destacándome por mi responsabilidad y capacidad para asimilar rápidamente nuevos conocimientos. 
         Mi enfoque se centra en un genuino interés por innovar en este campo de la tecnología."
@@ -117,35 +117,35 @@
   <div class="social">
   <mat-tab-group>
     <mat-tab label="WhatsApp">
-      <div class="centered-content">
+      <div class="container-boton">
         <a href="https://wa.me/message/ZTPOD5L4IP6OJ1" target="_blank" class="link-with-circle">
-          <img src="assets/icon/whatsapp.png" alt="WhatsApp" class="icon">
+          <img src="assets/icon/whatsapp.png" alt="WhatsApp" class="boton">
         </a>
       </div>
     </mat-tab>
     <mat-tab label="LinkedIn">
-      <div class="centered-content">
+      <div class="container-boton">
         <a href="www.linkedin.com/in/fredy-serech-08a11a246" target="_blank" class="link-with-circle">
           <img src="assets/icon/linkedin.png" alt="youtube" class="icon">
         </a>
       </div>
     </mat-tab>
     <mat-tab label="Facebook">
-      <div class="centered-content">
+      <div class="container-boton">
         <a href="https://www.facebook.com/fredy.serech?mibextid=ZbWKwL" target="_blank" class="link-with-circle">
           <img src="assets/icon/facebook.png" alt="facebook" class="icon">
         </a>
       </div>
     </mat-tab>
     <mat-tab label="GitHub">
-      <div class="centered-content">
+      <div class="container-boton">
         <a href="https://github.com/FREDY4478" target="_blank" class="link-with-circle">
           <img src="assets/icon/github.png" alt="GitHub" class="icon">
         </a>
       </div>
     </mat-tab>
     <mat-tab label="Gmail">
-      <div class="centered-content">
+      <div class="container-boton">
         <a href="mailto:serech63@gmail.com" target="_blank" class="link-with-circle">
           <img src="assets/icon/gmail.png" alt="Gmail" class="icon">
         </a>
@@ -156,6 +156,8 @@
   
 </section>
 
-
+<mat-toolbar color="red" class="footer">
+  <span class="footer-content">&copy; 2024 FS. Todos los derechos reservados.</span>
+</mat-toolbar>
 
 

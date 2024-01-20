@@ -1,10 +1,13 @@
 :root {
-  // --background: #121212 -webkit-gradient( linear, 0% 0%, 100% 100%, color-stop(0, #3775b3), color-stop(1, #2d5347) );
-  background: #373535;
-  --green: #388a76;
-  --dark-text: rgba(12, 42, 42);
-  --text: #fff;
+ 
+  background-color: rgba(0, 149, 255, 0.5);  
+  background: linear-gradient(rgba(4, 7, 6, 0.5), rgba(0, 0, 0, 0.5)), url("/assets/icon/inicio.jpg") top center;
+  background-size: cover;
+  background-position: center;
+  height: 300px;  
+  
 }
+
 
 html,
 body {
@@ -17,6 +20,11 @@ body {
   background: var(--background);
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+::-webkit-scrollbar {
+  width: 8px; /* Ajusta el grosor según tu preferencia */
+}
+
+
 
 .form {
   display: flex;
@@ -69,3 +77,4 @@ body {
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+

@@ -12,6 +12,8 @@ import { ButtonProviders } from '../components/button-providers/button-providers
 import { MatRippleModule } from '@angular/material/core';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatTabsModule} from '@angular/material/tabs';
+import { MatToolbarModule } from '@angular/material/toolbar';
+
 interface LogInForm {
   email: FormControl<string>;
   password: FormControl<string>;
@@ -33,6 +35,7 @@ interface LogInForm {
     NgIf,
     MatSnackBarModule,
     ButtonProviders,
+    MatToolbarModule,
     
   ],
   selector: 'app-log-in',
