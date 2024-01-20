@@ -85,7 +85,7 @@
 
 
 mat-icon {
-  font-size: 24px; /* Tamaño del ícono */
+  font-size: 24px; 
  
 }
 .mat-tab-group {
@@ -165,5 +165,14 @@ mat-icon {
   }
 }
  
- 
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-content {
+  flex: 10;
+} 
 
